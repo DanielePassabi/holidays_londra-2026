@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Londra, novembre 2026 — Un diario per immagini</title>
+  <meta name="description" content="Cinque giorni tra Londra e Cambridge. Un diario fotografico di strade, parchi, pub e amici. 5–9 novembre 2026.">
+  <link rel="canonical" href="https://danielepassabi.github.io/holidays_londra-2026/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Londra. Un diario per immagini.">
+  <meta property="og:description" content="5–9 novembre 2026. Strade, parchi, pub. E noi, in mezzo.">
+  <meta property="og:url" content="https://danielepassabi.github.io/holidays_londra-2026/">
+  <meta property="og:image" content="https://danielepassabi.github.io/holidays_londra-2026/social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="photos/0755-1920.webp" imagesrcset="photos/0755-960.webp 960w, photos/0755-1920.webp 1920w" imagesizes="100vw">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#diario">Salta al diario</a>
+  <header class="masthead" id="top">
+    <a href="#top" class="brand" aria-label="MindMash, inizio del diario"><span class="brand-symbol" aria-hidden="true"><i></i></span><span>MINDMASH<small>APPUNTI DI VIAGGIO</small></span></a>
+    <span class="edition">INGHILTERRA / NOVEMBRE 2026</span>
+    <button type="button" class="text-button archive-trigger js-only">Tutte le foto <span class="mini-grid" aria-hidden="true">▦</span></button>
+  </header>
+
+  <main>
+    <section class="cover" aria-labelledby="cover-title">
+      <img class="cover-image" src="photos/0755-1920.webp" srcset="photos/0755-960.webp 960w, photos/0755-1920.webp 1920w" sizes="100vw" width="5712" height="4284" alt="Il Tower Bridge sul Tamigi, sotto il cielo di novembre" fetchpriority="high">
+      <div class="cover-shade"></div>
+      <div class="cover-top"><span>UN DIARIO PER IMMAGINI</span><span>05 — 09 / 11 / 2026</span></div>
+      <div class="cover-title"><p>Cinque giorni, un rullino di ricordi.</p><h1 id="cover-title">Londra<span>.</span></h1></div>
+      <div class="cover-bottom"><p>Strade, parchi, pub.<br>E noi, in mezzo.</p><a href="#diario" class="cover-enter">Entra nel diario <span aria-hidden="true">↓</span></a></div>
+      <span class="cover-place">TOWER BRIDGE · 06 NOV, 12:55</span>
+    </section>
+
+    <nav class="day-nav" aria-label="Le cinque giornate"><div class="day-nav-inner">{{nav}}</div><div class="reading-progress" aria-hidden="true"></div></nav>
+
+    <div id="diario" class="journal-intro"><p class="eyebrow">IL VIAGGIO, UN GIORNO ALLA VOLTA</p><p>{{count}} fotografie. <em>Il resto, ce lo ricordiamo.</em></p><button type="button" class="random-photo text-button js-only">Un ricordo a caso <span aria-hidden="true">↗</span></button></div>
+    <div class="journal">{{journal}}</div>
+
+    <section class="endnote" aria-labelledby="end-title"><p class="eyebrow">05 — 09 NOVEMBRE 2026</p><h2 id="end-title">Alla prossima,<br><em>Londra.</em></h2><button type="button" class="archive-trigger end-archive js-only">Riguarda tutte le fotografie <span aria-hidden="true">↗</span></button><span class="end-stamp" aria-hidden="true">LONDON<br><b>NOV ’26</b><br>BEEN THERE. LOVED IT.</span></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#top">MINDMASH <span>/ APPUNTI DI VIAGGIO</span></a><div class="other-trips"><span>Gli altri viaggi</span><a href="https://danielepassabi.github.io/holidays_toscana-2026/">Toscana ↗</a><a href="https://danielepassabi.github.io/holidays_marocco-2026/">Marocco ↗</a></div><a href="#top" class="back-top" aria-label="Torna all’inizio">↑</a></footer>
+
+  <dialog id="archive" aria-labelledby="archive-title">
+    <div class="archive-heading"><div><p class="eyebrow">IL RULLINO / NOVEMBRE 2026</p><h2 id="archive-title">I provini<span>.</span></h2></div><button type="button" class="icon-button close-archive" aria-label="Chiudi i provini">×</button></div>
+    <div class="archive-toolbar"><div class="archive-filters" role="group" aria-label="Filtra le foto per giorno">{{filters}}</div><span id="archive-count" aria-live="polite">{{count}} fotografie</span></div>
+    <div class="contact-grid">{{archive}}</div>
+  </dialog>
+
+  <dialog id="lightbox" aria-labelledby="lightbox-title" aria-describedby="lightbox-help">
+    <div class="lightbox-top"><span class="lightbox-brand">LONDRA / NOV ’26</span><span class="lightbox-counter" aria-live="polite"></span><button type="button" class="icon-button close-lightbox" aria-label="Chiudi la fotografia">×</button></div>
+    <div class="lightbox-stage"><button type="button" class="icon-button prev-photo" aria-label="Fotografia precedente">←</button><div class="lightbox-image-wrap"><img class="lightbox-image" alt=""><p class="image-error" hidden>La foto non si è caricata. <button type="button" class="retry-photo">Riprova</button></p></div><button type="button" class="icon-button next-photo" aria-label="Fotografia successiva">→</button></div>
+    <div class="lightbox-bottom"><div><h2 id="lightbox-title"></h2><p class="lightbox-date"></p></div><button type="button" class="text-button photo-details-toggle" aria-expanded="false" aria-controls="photo-details">Dettagli <span aria-hidden="true">+</span></button></div>
+    <p id="photo-details" hidden></p><p id="lightbox-help" class="sr-only">Usa le frecce della tastiera o scorri sulla foto per cambiare immagine. Premi Escape per chiudere.</p>
+  </dialog>
+  <script id="photo-data" type="application/json">{{photoData}}</script>
+</body>
+</html>
