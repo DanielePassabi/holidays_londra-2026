@@ -22,11 +22,11 @@ L’output statico è `dist/`. Dopo la build puoi anche aprire **`dist/index.htm
 
 ## GitHub Pages
 
-URL di destinazione: <https://danielepassabi.github.io/holidays_londra-2026/>.
+Sito pubblicato: <https://danielepassabi.github.io/holidays_londra-2026/>.
 
 In **Settings → Pages → Build and deployment**, seleziona **GitHub Actions**. Il workflow `.github/workflows/deploy.yml` esegue test e build, quindi pubblica `dist/` a ogni push su `main`; è disponibile anche l’avvio manuale. I percorsi degli asset sono relativi e compatibili con il sottopercorso della repository.
 
-La preparazione locale non pubblica automaticamente nulla: servono commit, push e l’abilitazione di Pages. Il file `integration/2026-11_Londra.mdx` è pronto da copiare in `MindMash-private/docs/tracking/Holidays/` dopo la pubblicazione; la sidebar di MindMash è autogenerata, come per Marocco e Toscana.
+Pages è abilitato: ogni push su `main` avvia la pubblicazione. La pagina di collegamento è in `MindMash-private/docs/tracking/Holidays/2026-11_Londra.mdx`; una copia è conservata in `integration/`. La sidebar di MindMash raggruppa i viaggi per anno, con Londra sotto **Holidays → 2026 → Londra · novembre**, mantenendo gli URL dei documenti esistenti.
 
 ## Contenuti
 
